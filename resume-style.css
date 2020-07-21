@@ -1,0 +1,9 @@
+body {
+margin: 0;
+}
+
+.main-container {
+  background: blue;
+  height: 100%;
+  grid-template-columns: repeat(4, 1fr);
+}
