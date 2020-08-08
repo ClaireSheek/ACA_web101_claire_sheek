@@ -1,6 +1,6 @@
-const placeForResults = document.getElementById("results")
+const viewResults = document.getElementById("results")
 
 new URLSearchParams(window.location.search).forEach((value, name) => {
-    placeForResults.append(`${name} : ${value}`)
-    placeForResults.append(document.createElement("br"))
+    viewResults.append(`${name} : ${value}`)
+    viewResults.append(document.createElement("br"))
   })

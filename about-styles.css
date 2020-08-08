@@ -110,10 +110,6 @@ main {
     padding: 5px;
   }
 
-  footer{
-
-  }
-
   @media (max-width: 768px) {
     nav > a {
       font-size: 1em;
