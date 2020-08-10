@@ -1,0 +1,76 @@
+  main {
+    background-color: whitesmoke;
+}
+
+.title {
+    margin: 10px;
+}
+
+form {
+  display: grid;
+  grid-gap: 8%;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 5% 5% 20%;
+  max-width: 900px;
+  height: fit-content;
+  background-color: rgb(192, 192, 192, 0.5);
+  /* border: 5px double goldenrod; */
+  color: #848486;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.birthday {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.comments {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+#comments {
+  width: 100%;
+  height: 150px;
+
+}
+
+.refferedBy {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.responseQuery {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+button {
+  margin: 50px auto;
+  padding: 5px;
+  color: goldenrod;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  border: 3px solid whitesmoke;
+  background-color: whitesmoke;
+}
+
+button:hover {
+  border-style: double;	  
+  border-color:goldenrod;	
+}	
+
+
+@media (max-width: 768px) {
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 5px;
+  }
+}
