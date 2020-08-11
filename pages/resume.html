@@ -21,13 +21,14 @@
   <main class="main-container">
     <section class="leftColumn">
       <div class="headshot">
-        <img src="../images/ann-miller.jpg" alt="Anne Miller Headshot"></div>
+        <img onmouseover="hideOnHover(this)" onmouseout="revealPostHover(this)"  src="../images/ann-miller.jpg" alt="Anne Miller Headshot"></div>
       <div class="contact">
         <p>Chireno, Texas</p>
         <hr>
         <p>ann@miller.me</p>
         <hr>
-        <p>123-456-7890</p>
+        <p onClick="revealNum()" id="phonePrompt">phone:</p>
+        <p id="phoneNum"> 123-456-7890</p>
       </div>
       <div class="skills">
         <h2>THE SKILLS</h2>
@@ -58,7 +59,7 @@
     </section>
     <section class="rightColumn">
       <h2 id="intro"> Hi, I AM</h2>
-      <h1 onClick="userClick(this)">ANN MILLER</h1>
+      <h1 onClick="fadeOnClick(this)">ANN MILLER</h1>
       <p class="profile">Johnnie Lucille Collier (April 12, 1923[1] – January 22, 2004), known professionally as Ann Miller, was an American dancer, singer, and actress. She is best remembered for her work in the Classical Hollywood cinema musicals of the 1940s and 1950s. Her early work included roles in Frank Capra's You Can't Take It with You (1938) and the Marx Bros. film Room Service (1938). She later would star in the movie musical classics Vincent Minnelli's Easter Parade (1948), Stanley Donen's On the Town (1949) and George Sidney's Kiss Me Kate (1953). Her final film role would be in David Lynch's Mulholland Drive (2001).
         <br>
         In 1960, Miller received a star on the Hollywood Walk of Fame.</p>
@@ -91,6 +92,6 @@
       </div>
     </section>
   </main>
-  <script src="../scripts/resume.js"
+  <script src="../scripts/resume.js"></script>
 </body>
 </html>

@@ -73,6 +73,14 @@ p{
   font-size: 1em;
 }
 
+#phonePrompt {
+  cursor: pointer;
+}
+
+/* #phoneNum {
+  display: none;
+} */
+
 .leftColumn {
   display: flex;
   flex-direction: column;
