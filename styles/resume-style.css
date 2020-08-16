@@ -77,9 +77,9 @@ p{
   cursor: pointer;
 }
 
-/* #phoneNum {
+.phoneNum {
   display: none;
-} */
+}
 
 .leftColumn {
   display: flex;
