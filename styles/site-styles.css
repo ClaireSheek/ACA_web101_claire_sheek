@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: whitesmoke;
+    color: goldenrod;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  main {
+    max-width: 1024px;
+    margin: 30px auto;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    max-width: 50%;
+    margin: 0;
+    text-align: center;
+    background-color: goldenrod;
+    color: whitesmoke;
+    border: 5px solid goldenrod;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  h1:hover  {
+    color: goldenrod;
+    background-color: whitesmoke;
+  }
+  
+  header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+  }
+  
+  /* .logo {
+    width: 10%;
+    height: 10%;
+    margin: 1% 3%;
+  } */
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  
+  nav > a {
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  nav > a:hover {
+    color: grey;
+  }
+
+  @media (max-width: 500px) {
+    nav > a {
+      font-size: 5vw;
+    }
+  }

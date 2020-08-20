@@ -2,14 +2,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="resume-pages/resume-style.css">
+  <link rel="stylesheet" href="../styles/resume-style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Paytone+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <title>Resume</title>
 </head>
 <body>
   <header>
-    <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
+    <!-- <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo"> -->
     <nav>
+        <a href="../index.html">Home</a>
         <a href="resume.html">Resume</a>
         <a href="about.html">About</a>
         <a href="https://medium.com/@clairesheek">Blog</a>
@@ -19,13 +21,14 @@
   <main class="main-container">
     <section class="leftColumn">
       <div class="headshot">
-        <img src="images/ann-miller.jpg" alt="Anne Miller Headshot"></div>
+        <img onmouseover="hideOnHover(this)" onmouseout="revealPostHover(this)"  src="../images/ann-miller.jpg" alt="Anne Miller Headshot"></div>
       <div class="contact">
         <p>Chireno, Texas</p>
         <hr>
         <p>ann@miller.me</p>
         <hr>
-        <p>123-456-7890</p>
+        <p onclick="revealNum()" id="phonePrompt">phone:</p>
+        <p class="displayNone" id="phoneNum"> 123-456-7890</p>
       </div>
       <div class="skills">
         <h2>THE SKILLS</h2>
@@ -47,16 +50,16 @@
         <h2>SOCIAL LINK</h2>
         <hr class="yellow">
         <ul class="links">
-          <li><a href="https://facebook.com/"><img src="icons/Facebook icon.svg" alt="Instagram" title="Instagram"></a>/Facebook.com</li>
-          <li><a href="https://instagram.com/"><img src="icons/medium.svg" alt="Medium" title="Medium"></a>/Medium.com</li>
-          <li><a href="https://linkedin.com/"><img src="icons/LinkedIn icon.svg" alt="LinkedIn" title="LinkedIn"></a>/LinkedIn.com</li>
-          <li><a href="https://github.com/"><img src="icons/GitHub icon.svg" alt="GitHub" title="GitHub"></a>/GitHub.com</li>
+          <li><a href="https://facebook.com/"><img src="../images/icons/Facebook icon.svg" alt="Instagram" title="Instagram"></a>/Facebook.com</li>
+          <li><a href="https://instagram.com/"><img src="../images/icons/medium.svg" alt="Medium" title="Medium"></a>/Medium.com</li>
+          <li><a href="https://linkedin.com/"><img src="../images/icons/LinkedIn icon.svg" alt="LinkedIn" title="LinkedIn"></a>/LinkedIn.com</li>
+          <li><a href="https://github.com/"><img src="../images/icons/GitHub icon.svg" alt="GitHub" title="GitHub"></a>/GitHub.com</li>
         </ul>
       </div>
     </section>
     <section class="rightColumn">
       <h2 id="intro"> Hi, I AM</h2>
-      <h1>ANN MILLER</h1>
+      <h1 onclick="fadeOnClick(this)">ANN MILLER</h1>
       <p class="profile">Johnnie Lucille Collier (April 12, 1923[1] – January 22, 2004), known professionally as Ann Miller, was an American dancer, singer, and actress. She is best remembered for her work in the Classical Hollywood cinema musicals of the 1940s and 1950s. Her early work included roles in Frank Capra's You Can't Take It with You (1938) and the Marx Bros. film Room Service (1938). She later would star in the movie musical classics Vincent Minnelli's Easter Parade (1948), Stanley Donen's On the Town (1949) and George Sidney's Kiss Me Kate (1953). Her final film role would be in David Lynch's Mulholland Drive (2001).
         <br>
         In 1960, Miller received a star on the Hollywood Walk of Fame.</p>
@@ -89,5 +92,6 @@
       </div>
     </section>
   </main>
+  <script src="../scripts/resume.js"></script>
 </body>
 </html>
