@@ -1,9 +1,10 @@
 main {
   display: grid;
+  width: 100%;
+  margin-top: 0;
   grid-gap: 5%;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 80px repeat(2,1fr) 80px;
-  background-color: whitesmoke;
 }
 
 .title {
@@ -11,6 +12,9 @@ main {
   grid-row: 1/2;
   margin: 10px;
 }
+ h1{
+   color: goldenrod;
+ }
 
 .bio {
   grid-column: 1/2;
