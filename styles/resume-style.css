@@ -10,7 +10,6 @@ header {
   height: 10vh;
   display: flex;
   justify-content: center;
-  background-color: goldenrod;
 }
 
 nav {
@@ -36,11 +35,11 @@ nav > a:hover {
 
 .main-container {
   display: flex;  
-  background-color: whitesmoke;
   color: #848486;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   margin: 0;
+  margin-bottom: 30px;
   padding: 10px;
 }
 
@@ -48,6 +47,9 @@ h1 {
   color: goldenrod;
   font-size: 3em;
   font-weight: bold;
+  border: none;
+  max-width: 100%;
+  text-align: left;
 }
 
 h2 {
@@ -57,9 +59,9 @@ h2 {
 }
 
 h3 {
-  margin: 2em 0 0 0;
+  margin: 0.5em 0 0 0;
   padding: 0;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
@@ -83,6 +85,7 @@ p{
 
 .leftColumn {
   display: flex;
+  max-width: 300px;
   flex-direction: column;
   flex-basis: 150em;
 }
@@ -114,6 +117,10 @@ hr {
 
 hr.yellow { 
   border-color: goldenrod;
+}
+a{
+  text-decoration: none;
+  color: #848486;
 }
 
 .skills, .social{
@@ -157,6 +164,7 @@ ul.links img {
 
 .rightColumn {
   display: grid;
+  flex: 1;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5% 10% 20% 5% 10% 5% repeat(3, .25fr);
   margin: 5px 10px;
