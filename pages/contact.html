@@ -16,7 +16,7 @@
             <a href="../index.html">Home</a>
             <a href="resume.html">Resume</a>
             <a href="about.html">About</a>
-            <a href="https://medium.com/@clairesheek">Blog</a>
+            <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
@@ -27,11 +27,11 @@
         </div>
         <form action="contact-pages/results.html" method="GET" enctype="multipart/form-data">
           <div>
-            <label for="name">Name</label>
+            <label for="name">Full Name</label>
             <input type="text" name="name" id="name" >
         </div>
         <div>
-          <label for="email">Email</label>
+          <label for="email">Email Address</label>
           <input type="email" name="email" id="email" >
         </div>
         <div class="refferedBy">
@@ -45,27 +45,10 @@
             <input type="checkbox" name="resumeSub" id="resumeSub">
           </div>
         </div>
-        <div class="responseQuery">
-          Would you like to be contacted back?
-          <div>
-            <label for="yes">Yes</label>
-            <input type="radio" name="needResponse" id="yes" value="yes">
-          </div>
-          <div>
-            <label for="no">No</label>
-            <input type="radio" name="needResponse" id="no" value="no">
-          </div>
-        </div>
-        <div class="birthday">
-            Optional: Leave your birthdate to recieve a special birthday wish!
-            <label for="date">Birthdate</label>
-            <input type="date" name="date" id="date" max="2002-06-10">
-        </div>
         <div class="comments">
-          <label for="comments">Comments</label><br>
+          <label for="comments">Message</label><br>
           <textarea id="comments" name="comments"></textarea>
         </div>
-        <button type="reset">Reset</button>
         <button type="submit">Submit</button>
       </form>
       <script src="scripts.js"></script>

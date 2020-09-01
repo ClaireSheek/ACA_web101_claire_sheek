@@ -7,25 +7,30 @@
     <link rel="stylesheet" href="../styles/blog-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Paytone+One&display=swap" rel="stylesheet">
-    <title>blog</title>
+    <title>Blog</title>
 </head>
-<body style="margin-top: 100px;">
-  <div style="position: fixed; top: 0; width: 100%; height: 100px; background: #fff;z-index: 100;">header</div>
-  <h1>Test header</h1>
-  <p>Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Fusce commodo aliquam arcu. Morbi mollis tellus ac sapien. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Donec sodales sagittis magna.</p>
-<!-- Start embed -->    
-<div id="retainable-rss-embed" 
-  data-rss="https://medium.com/feed/retainable,
-   https://medium.com/feed/js-dojo,                https://medium.com/feed/vue-mastery" 
-   data-maxcols="4" 
-   data-layout="slider" 
-   data-poststyle="modal" 
-   data-readmore="Read the rest" 
-   data-buttonclass="btn btn-primary" 
-   data-offset="-200">&#160;</div>
-<!-- End embed -->
+<body>
+  <header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main class="animate__animated animate__fadeIn">
+  <section>
+  <div class="title">
+    <h2>Read My</h2>
+    <h1>Blog</h1>
+  </div>
+  <div id="medium-widget"></div>
+</section>
+  <button><a href="httsp://www.medium.com/@clairesheek">View More on Medium</a></button>
 
-<!-- place near the bottom of your page -->    
-<script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+  <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+  <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@clairesheek","postsPerLine":2,"limit":6,"picture":"small","fields":["description","publishAt"],"ratio":"square"}})</script>
+</main>
 </body>
 </html>
